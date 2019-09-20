@@ -76,7 +76,7 @@ export default function Album() {
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
-          <Container maxWidth="sm">
+          <Container maxWidth="lg">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Cindy Wang
             </Typography>
@@ -87,7 +87,7 @@ export default function Album() {
               Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, order fulfillment, and merchant fine policies, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending hackathons (8 so far). Aside from studying I like to cook, go to the gym, work on this website, and help with course work as a class academic rep.  
             </Typography>
             <div className={classes.heroButtons}>
-              <Grid container spacing={2} justify="center">
+              <Grid container spacing={4} justify="center">
                 <Grid item>
                   <Button variant="outlined" color="primary" href = "https://drive.google.com/file/d/16ofRsj0Cb7kZx8SohaXD2EpmL1fKHTaw/view?usp=sharing">
                     Resume
@@ -112,10 +112,10 @@ export default function Album() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           {/* End hero unit */}
-          <Grid container spacing={4}>
-              <Grid item key={1} xs={12} sm={6} md={4}>
+          <Grid container spacing={2}>
+              <Grid item key={0} xs={12} sm={6} md={4} lg = {3}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -137,7 +137,7 @@ export default function Album() {
                   </CardActions>
                 </Card>
               </Grid>
-              <Grid item key={0} xs={12} sm={6} md={4}>
+              <Grid item key={1} xs={12} sm={6} md={4} lg = {3}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -149,7 +149,7 @@ export default function Album() {
                       CS241 Class Notes
                     </Typography>
                     <Typography>
-                      Class notes for CS241(e) Foundations of sequential programs; I'll update these on the weekend
+                      Notes for CS241(e) Foundations of sequential programs; I'll update these on the weekend
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -159,7 +159,7 @@ export default function Album() {
                   </CardActions>
                 </Card>
               </Grid>
-              <Grid item key={2} xs={12} sm={6} md={4}>
+              <Grid item key={2} xs={12} sm={6} md={4} lg = {3}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -179,6 +179,23 @@ export default function Album() {
                       View
                     </Button>
                   </CardActions>
+                </Card>
+              </Grid>
+              <Grid item key={3} xs={12} sm={6} md={4} lg = {3}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    title="Image"
+                    image="https://raw.githubusercontent.com/cindywang328/website/master/screenshots/Screen%20Shot%202019-09-20%20at%206.22.42%20AM.png"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      Digital Art
+                    </Typography>
+                    <Typography>
+                      Following art tutorials on my Samsung Galaxy Note. Currently attempting <Link href = "https://www.youtube.com/watch?v=DTIyz2MQfSw"> this one </Link>
+                    </Typography>
+                  </CardContent>
                 </Card>
               </Grid>
           </Grid>
