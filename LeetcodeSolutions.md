@@ -51,9 +51,11 @@ The DP array for this one is very interesting:
         return max;
     }
  ```
-\n
-**Combination Sum** \n
-This is a common backtracking question. Inside the backtrack function, we push the current element onto the temporary list, call the function recursively on that list, and then pop it. We do this for all the elements in the `nums` array, so we can check all cases (all combinations of each element being included or not included). \n
+
+**Combination Sum** 
+
+This is a common backtracking question. Inside the backtrack function, we push the current element onto the temporary list, call the function recursively on that list, and then pop it. We do this for all the elements in the `nums` array, so we can check all cases (all combinations of each element being included or not included).
+
 For Combination Sum 2 we need a case `if(i > start && candidates[i] == candidates[i-1]){ continue;}` in the for loop so that it will skip repeated elements; for example if it was 1,2,2,2,3 it would only take one of the 2s each time and won't count (1, 2_1, 3), (1, 2_2, 3)... as different cases. 
 ```
 class Solution {
