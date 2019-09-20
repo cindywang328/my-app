@@ -69,7 +69,7 @@ export default function Album() {
       <AppBar position="relative">
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
-            Hi!
+            Hello World! 
           </Typography>
         </Toolbar>
       </AppBar>
@@ -78,10 +78,13 @@ export default function Album() {
         <div className={classes.heroContent}>
           <Container maxWidth="sm">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-              Album layout
+              Cindy Wang
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Hey there! I'm a Software Engineering student at the University of Waterloo.
+              Hey there! I'm a 2A Software Engineering student at the University of Waterloo.
+            </Typography>
+            <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
+              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, order fulfillment, and merchant fine policies, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending hackathons. Aside from studying I like to cook, go to the gym, work on this website, and help with course work as a class academic rep.  
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -112,44 +115,19 @@ export default function Album() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-              <Grid item key={0} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small" color="primary">
-                      View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
-                    </Button>
-                  </CardActions>
-                </Card>
-              </Grid>
               <Grid item key={1} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="https://raw.githubusercontent.com/cindywang328/website/master/truthtablescreenshot.jpg"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Truth Table Generator
                     </Typography>
                     <Typography>
-                      Truth Table Generator
+                      Propositional logic truth tables for SE212 Logic and Computation. Reduces typing for assignments!
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -159,27 +137,46 @@ export default function Album() {
                   </CardActions>
                 </Card>
               </Grid>
+              <Grid item key={0} xs={12} sm={6} md={4}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.cardMedia}
+                    image="https://raw.githubusercontent.com/cindywang328/website/master/screenshots/Screen%20Shot%202019-09-20%20at%205.31.29%20AM.png"
+                    title="Image"
+                  />
+                  <CardContent className={classes.cardContent}>
+                    <Typography gutterBottom variant="h5" component="h2">
+                      CS241 Class Notes
+                    </Typography>
+                    <Typography>
+                      Class notes for CS241(e) Foundations of sequential programs; I'll update these on the weekend
+                    </Typography>
+                  </CardContent>
+                  <CardActions>
+                    <Button size="small" color="primary" href = "https://github.com/cindywang328/website/tree/master/screenshots">
+                      View
+                    </Button>
+                  </CardActions>
+                </Card>
+              </Grid>
               <Grid item key={2} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
-                    title="Image title"
+                    image="https://raw.githubusercontent.com/cindywang328/website/master/screenshots/Screen%20Shot%202019-09-20%20at%205.30.10%20AM.png"
+                    title="Image"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Leetcode Practice
                     </Typography>
                     <Typography>
-                      This is a media card. You can use this section to describe the content.
+                      Some notes on interesting Leetcode questions
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary">
+                    <Button size="small" color="primary" href = "https://github.com/cindywang328/website/blob/master/LeetcodeSolutions.md">
                       View
-                    </Button>
-                    <Button size="small" color="primary">
-                      Edit
                     </Button>
                   </CardActions>
                 </Card>
