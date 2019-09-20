@@ -51,3 +51,33 @@ The DP array for this one is very interesting:
         return max;
     }
  ```
+\n
+**Combination Sum** \n
+This is a common backtracking question. Inside the backtrack function, we push the current element onto the temporary list, call the function recursively on that list, and then pop it. We do this for all the elements in the `nums` array, so we can check all cases (all combinations of each element being included or not included). \n
+For Combination Sum 2 we need a case `if(i > start && candidates[i] == candidates[i-1]){ continue;}` in the for loop so that it will skip repeated elements; for example if it was 1,2,2,2,3 it would only take one of the 2s each time and won't count (1, 2_1, 3), (1, 2_2, 3)... as different cases. 
+```
+class Solution {
+public:
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<vector<int>> total;
+        sort(candidates.begin(), candidates.end());
+        if (size(candidates) == 0) return total;
+        vector<int> temp;
+        backtrack(candidates, 0, target, total, temp);
+        return total;
+        
+    }
+    void backtrack(vector<int> nums, int start, int target, vector<vector<int>> &total, vector<int> &temp)    {
+       if (target < 0){return;} 
+       if (target == 0){
+           total.push_back(temp);
+       }
+        for(int i = start; i<size(nums); i++){
+            if(nums[i]>target){continue;}
+            temp.push_back(nums[i]);
+            backtrack(nums, i, target-nums[i], total, temp);
+            temp.pop_back();
+        }
+    }
+};
+```
