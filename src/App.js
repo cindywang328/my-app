@@ -84,7 +84,7 @@ export default function Album() {
               Hey there! I'm a 2A Software Engineering student at the University of Waterloo.
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
-              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, order fulfillment, and merchant fine policies, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending hackathons. Aside from studying I like to cook, go to the gym, work on this website, and help with course work as a class academic rep.  
+              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, order fulfillment, and merchant fine policies, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending hackathons (8 so far). Aside from studying I like to cook, go to the gym, work on this website, and help with course work as a class academic rep.  
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
@@ -99,12 +99,12 @@ export default function Album() {
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary" href = "github.com/cindywang328">
+                  <Button variant="outlined" color="primary" href = "https://github.com/cindywang328">
                     GitHub
                   </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined" color="primary" href = "devpost.com/cindywang328">
+                  <Button variant="outlined" color="primary" href = "https://devpost.com/cindywang328">
                     Devpost
                   </Button>
                 </Grid>
