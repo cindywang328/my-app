@@ -80,7 +80,7 @@ export default function Album() {
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Cindy Wang
             </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+            <Typography variant="h4" align="center" color="textSecondary" paragraph>
               Hey there! I'm a second year Software Engineering student at the University of Waterloo.
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
