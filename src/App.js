@@ -81,7 +81,7 @@ export default function Album() {
               Cindy Wang
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Hey there! I'm a 2A Software Engineering student at the University of Waterloo.
+              Hey there! I'm a second year Software Engineering student at the University of Waterloo.
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
               Last term, I was a full stack developer intern at Wish's Marketplace Logistics team in San Francisco, working on features such as the <Link href = "https://www.wishpost.cn/tracking">package tracking</Link> system, <Link href = "https://merchant.wish.com/fbw">order fulfillment</Link>, and <Link href = "https://merchant.wish.com/policy/fulfillment">merchant fines</Link>, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending <Link href="https//devpost.com/cindywang328">hackathons (8 so far)</Link>. Aside from studying I like to cook, go to the gym, work on this website, and help out with courses as a class academic rep.  
@@ -132,10 +132,10 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary" href = "https://repl.it/@CindyWang5/MultiTruthTableGenerator">
-                      repl.it link
+                      try it on repl.it
                     </Button>
                     <Button size="small" color="primary" href = "https://github.com/cindywang328/truthtable">
-                      Github
+                      view details
                     </Button>
                   </CardActions>
                 </Card>
@@ -157,7 +157,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary" href = "https://github.com/cindywang328/website/tree/master/screenshots">
-                      View
+                      View details
                     </Button>
                   </CardActions>
                 </Card>
@@ -179,7 +179,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary" href = "https://github.com/cindywang328/waterlooworks_excel_spreadsheet">
-                      Details
+                      View Details
                     </Button>
                   </CardActions>
                 </Card>
