@@ -76,7 +76,7 @@ export default function Album() {
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
-          <Container maxWidth="lg">
+          <Container maxWidth="md">
             <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
               Cindy Wang
             </Typography>
@@ -84,7 +84,7 @@ export default function Album() {
               Hey there! I'm a 2A Software Engineering student at the University of Waterloo.
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
-              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, <Link href = "https://merchant.wish.com/fbw">order fulfillment</Link>, and merchant fines, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending <Link href="https//devpost.com/cindywang328">hackathons (8 so far)</Link>. Aside from studying I like to cook, go to the gym, try digital painting tutorials, work on this website, and help out with courses as a class academic rep.  
+              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, <Link href = "https://merchant.wish.com/fbw">order fulfillment</Link>, and merchant fines, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending <Link href="https//devpost.com/cindywang328">hackathons (8 so far)</Link>. Aside from studying I like to cook, go to the gym, work on this website, and help out with courses as a class academic rep.  
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={4} justify="center">
@@ -112,10 +112,10 @@ export default function Album() {
             </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="lg">
+        <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={2}>
-              <Grid item key={0} xs={12} sm={6} md={4} lg = {3}>
+              <Grid item key={0} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -127,17 +127,20 @@ export default function Album() {
                       Truth Table Generator
                     </Typography>
                     <Typography>
-                      Propositional logic truth tables for SE212 Logic and Computation. Reduces typing for assignments!
+                      Creates ASCII propositional logic truth tables for SE212 Logic and Computation. 
                     </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary" href = "https://repl.it/@CindyWang5/MultiTruthTableGenerator">
                       repl.it link
                     </Button>
+                    <Button size="small" color="primary" href = "https://github.com/cindywang328/truthtable">
+                      Github
+                    </Button>
                   </CardActions>
                 </Card>
               </Grid>
-              <Grid item key={1} xs={12} sm={6} md={4} lg = {3}>
+              <Grid item key={1} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -149,7 +152,7 @@ export default function Album() {
                       CS241 Class Notes
                     </Typography>
                     <Typography>
-                      Notes for CS241(e) Foundations of sequential programs; I'll update these on the weekend
+                      Notes for CS241(e) Foundations of sequential programs.
                     </Typography>
                   </CardContent>
                   <CardActions>
@@ -159,43 +162,26 @@ export default function Album() {
                   </CardActions>
                 </Card>
               </Grid>
-              <Grid item key={2} xs={12} sm={6} md={4} lg = {3}>
+              <Grid item key={2} xs={12} sm={6} md={4}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://raw.githubusercontent.com/cindywang328/website/master/screenshots/Screen%20Shot%202019-09-20%20at%205.30.10%20AM.png"
+                    image="https://raw.githubusercontent.com/cindywang328/waterlooworks_excel_spreadsheet/master/Screen%20Shot%202019-09-21%20at%2010.53.13%20PM.png"
                     title="Image"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Leetcode Practice
+                      WaterlooWorks to Spreadsheet Converter
                     </Typography>
                     <Typography>
-                      Some notes on interesting Leetcode questions
+                      Scrapes WaterlooWorks website and stores job posting data in an Excel spreadsheet
                     </Typography>
                   </CardContent>
                   <CardActions>
-                    <Button size="small" color="primary" href = "https://github.com/cindywang328/website/blob/master/LeetcodeSolutions.md">
+                    <Button size="small" color="primary" href = "https://github.com/cindywang328/waterlooworks_excel_spreadsheet">
                       View
                     </Button>
                   </CardActions>
-                </Card>
-              </Grid>
-              <Grid item key={3} xs={12} sm={6} md={4} lg = {3}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    title="Image"
-                    image="https://raw.githubusercontent.com/cindywang328/website/master/screenshots/Screen%20Shot%202019-09-20%20at%206.22.42%20AM.png"
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Digital Art
-                    </Typography>
-                    <Typography>
-                      Following art tutorials on my Samsung Galaxy Note. Currently attempting <Link href = "https://www.youtube.com/watch?v=DTIyz2MQfSw"> this one </Link>
-                    </Typography>
-                  </CardContent>
                 </Card>
               </Grid>
           </Grid>
