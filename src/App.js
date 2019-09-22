@@ -84,7 +84,7 @@ export default function Album() {
               Hey there! I'm a 2A Software Engineering student at the University of Waterloo.
             </Typography>
             <Typography variant="subtitle1" align="center" color="textSecondary" paragraph>
-              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the package tracking system, <Link href = "https://merchant.wish.com/fbw">order fulfillment</Link>, and merchant fines, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending <Link href="https//devpost.com/cindywang328">hackathons (8 so far)</Link>. Aside from studying I like to cook, go to the gym, work on this website, and help out with courses as a class academic rep.  
+              Last term, I was a full stack developer intern at Wish's Marketplace team in San Francisco, working on features such as the <Link href = "https://www.wishpost.cn/tracking">package tracking</Link> system, <Link href = "https://merchant.wish.com/fbw">order fulfillment</Link>, and <Link href = "https://merchant.wish.com/policy/fulfillment">merchant fines</Link>, using Python, React.js, Backbone.js, and MongoDB. I'm interested in both web and mobile development as well as attending <Link href="https//devpost.com/cindywang328">hackathons (8 so far)</Link>. Aside from studying I like to cook, go to the gym, work on this website, and help out with courses as a class academic rep.  
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={4} justify="center">
@@ -179,7 +179,7 @@ export default function Album() {
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary" href = "https://github.com/cindywang328/waterlooworks_excel_spreadsheet">
-                      View
+                      Details
                     </Button>
                   </CardActions>
                 </Card>
